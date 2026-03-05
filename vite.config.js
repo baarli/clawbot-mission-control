@@ -9,7 +9,7 @@ const REPO_NAME = process.env.VITE_REPO_NAME || 'clawbot-mission-control'
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NODE_ENV === 'production' ? `/${REPO_NAME}/` : '/',
+  base: './',  // Use relative paths for docs folder deployment
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
