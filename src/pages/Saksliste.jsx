@@ -31,7 +31,24 @@ export default function Saksliste() {
         </div>
         
         <div className="flex items-center gap-3">
-          <button className="btn-cyber flex items-center gap-2">
+          <button 
+            className="btn-cyber flex items-center gap-2"
+            onClick={async () => {
+              // Create task from saksliste item
+              const selectedItem = items[0] // For demo, use first item
+              if (selectedItem) {
+                await supabase.from('vev_tasks').insert({
+                  title: selectedItem.title,
+                  description: selectedItem.description,
+                  column_id: 'backlog',
+                  priority: 'medium',
+                  source: 'saksliste',
+                  agenda_item_id: selectedItem.id
+                })
+                alert('Oppgave lagt til i Kanban!')
+              }
+            }}
+          >
             <Sun size={16} />
             <span>Kjør Morning Routine</span>
           </button>
