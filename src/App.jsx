@@ -16,6 +16,7 @@ import FleetOverview from './pages/FleetOverview'
 import AlertSystem from './pages/AlertSystem'
 import MissionLogs from './pages/MissionLogs'
 import Settings from './pages/Settings'
+import Saksliste from './pages/Saksliste'
 
 // ─── Page meta ────────────────────────────────────────────────────────────────
 const PAGE_TITLES = {
@@ -28,6 +29,7 @@ const PAGE_TITLES = {
   '/alerts':    'Alert & Incident System',
   '/logs':      'Mission History',
   '/settings':  'System Settings',
+  '/saksliste': 'Saksliste & Kanban',
 }
 
 // ─── Page transition ──────────────────────────────────────────────────────────
@@ -116,6 +118,7 @@ function AppInner() {
               <Route path="/alerts" element={<PageTransition><AlertSystem /></PageTransition>} />
               <Route path="/logs" element={<PageTransition><MissionLogs /></PageTransition>} />
               <Route path="/settings" element={<PageTransition><Settings /></PageTransition>} />
+              <Route path="/saksliste" element={<PageTransition><Saksliste /></PageTransition>} />
             </Routes>
           </AnimatePresence>
         </main>

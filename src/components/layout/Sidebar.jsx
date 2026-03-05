@@ -5,13 +5,14 @@ import {
   LayoutDashboard, Terminal, ListTodo, Mic, Activity,
   Ship, Bell, ScrollText, Settings, ChevronLeft, ChevronRight,
   Bot, Wifi, WifiOff, Battery, BatteryLow, AlertTriangle,
-  Cpu, Zap
+  Cpu, Zap, Newspaper
 } from 'lucide-react'
 import { useRobotStore } from '../../stores/robotStore'
 import clsx from 'clsx'
 
 const NAV_ITEMS = [
   { path: '/',          icon: LayoutDashboard, label: 'Mission Control', exact: true },
+  { path: '/saksliste', icon: Newspaper,       label: 'Saksliste' },
   { path: '/commands',  icon: Terminal,        label: 'Command Center' },
   { path: '/tasks',     icon: ListTodo,        label: 'Task Board' },
   { path: '/voice',     icon: Mic,             label: 'Voice Center' },
