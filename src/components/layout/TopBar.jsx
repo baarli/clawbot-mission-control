@@ -117,13 +117,23 @@ export default function TopBar({ pageTitle }) {
       className="flex items-center h-14 px-4 border-b border-white/5 flex-shrink-0 relative"
       style={{ background: 'rgba(5,8,16,0.97)' }}
     >
-      {/* Left: breadcrumb */}
+      {/* Left: Vev branding */}
       <div className="flex items-center gap-3 flex-1 min-w-0">
-        <div className="hidden sm:flex items-center gap-1.5 text-gray-600 text-xs">
-          <span className="text-[10px] uppercase tracking-wider">Mission Control</span>
-          <span>/</span>
+        <div className="flex items-center gap-2">
+          <img 
+            src="/vev-avatar.jpg" 
+            alt="Vev" 
+            className="w-8 h-8 rounded-full border-2 border-cyan-400/50"
+          />
+          <div>
+            <h1 className="text-sm font-bold text-white">Vev Mission Control</h1>
+            <p className="text-[10px] text-cyan-400">AI Assistent med personlighet</p>
+          </div>
         </div>
-        <h1 className="text-sm font-semibold text-white truncate">{pageTitle}</h1>
+        <div className="hidden sm:flex items-center gap-1.5 text-gray-600 text-xs ml-4">
+          <span>/</span>
+          <span className="text-white font-medium">{pageTitle}</span>
+        </div>
       </div>
 
       {/* Center: mission clock */}

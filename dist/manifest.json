@@ -1,21 +1,21 @@
 {
-  "name": "ClawBot Mission Control System",
-  "short_name": "ClawBot MCS",
-  "description": "Professional robotics command center for ClawBot via KimiClaw",
+  "name": "Vev Mission Control",
+  "short_name": "Vev Control",
+  "description": "AI assistent kommandosenter — NRJ Morgen, Telegram, Voice Chat, og alle Vev systemer",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#050810",
-  "theme_color": "#050810",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
   "orientation": "landscape-primary",
   "icons": [
     {
-      "src": "/icon-192.png",
+      "src": "/vev-avatar-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/icon-512.png",
+      "src": "/vev-avatar-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
@@ -26,12 +26,17 @@
     {
       "name": "Dashboard",
       "url": "/",
-      "description": "Open Mission Control Dashboard"
+      "description": "Åpne Vev Dashboard"
     },
     {
-      "name": "Command Center",
-      "url": "/commands",
-      "description": "Control ClawBot"
+      "name": "Telegram",
+      "url": "/telegram",
+      "description": "Telegram Bot Kontroll"
+    },
+    {
+      "name": "Voice Chat",
+      "url": "/voice",
+      "description": "Snakk med Vev"
     }
   ]
 }
