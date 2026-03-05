@@ -14,6 +14,11 @@ import { format } from 'date-fns'
 import { useNavigate } from 'react-router-dom'
 import clsx from 'clsx'
 
+// Vev System Widgets
+import TelegramWidget from '../components/widgets/TelegramWidget'
+import LearningWidget from '../components/widgets/LearningWidget'
+import HealthWidget from '../components/widgets/HealthWidget'
+
 // ─── Custom tooltip ───────────────────────────────────────────────────────────
 function CyberTooltip({ active, payload, label }) {
   if (!active || !payload?.length) return null
@@ -386,6 +391,13 @@ export default function Dashboard() {
             </div>
           </div>
         </motion.div>
+      </div>
+
+      {/* ── Vev Systems Row ── */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <TelegramWidget />
+        <LearningWidget />
+        <HealthWidget />
       </div>
 
       {/* ── Second row ── */}
