@@ -1,5 +1,0 @@
-node_modules/
-dist/
-.env
-*.mjs
-.DS_Store
